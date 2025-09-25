@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Chosen Palette: Slate & Blue -->
+    <!-- Application Structure Plan: The JavaScript `categories` object has been updated to include the full list of sub-categories for 'Tanoshii Gakkou' as provided by the user. The application's logic remains unchanged, as it was designed to dynamically generate sub-tabs based on this list, demonstrating its scalability. The UI will now correctly display all specified sub-sections. -->
+    <!-- Visualization & Content Choices: Report Info: Trilingual dictionary entries in a nested structure. Goal: Navigate all sub-categories. Presentation Method: A two-tier tab system. Interaction: Clicking 'Tanoshii Gakkou' now reveals the complete list of sub-tabs. Justification: This update directly implements the user's specified content structure, populating the UI with the full range of available data files and making the application content-complete as per the request. Library/Method: Vanilla JavaScript, Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベンガル語-英語-日本語 対訳辞書</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', 'Noto Sans Bengali', sans-serif; -webkit-overflow-scrolling: touch; }
+        .highlight { background-color: #dbeafe; font-weight: bold; border-radius: 3px; padding: 0 2px; }
+        i { color: #475569; font-style: italic; }
+        .loader { width: 48px; height: 48px; border: 5px solid #cbd5e1; border-bottom-color: #3b82f6; border-radius: 50%; display: inline-block; box-sizing: border-box; animation: rotation 1s linear infinite; }
+        @keyframes rotation { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .tab, .sub-tab { transition: all 0.2s ease-in-out; }
+        .tab.active, .sub-tab.active { background-color: #3b82f6; color: white; font-weight: 700; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+        .collapsible-content { max-height: 0; transition: max-height 0.3s ease-out; overflow: hidden; }
+        #sub-tab-container { transition: opacity 0.3s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center my-6 md:my-8">
+            <h1 class="text-2xl md:text-4xl font-bold text-slate-900">ベンガル語-英語-日本語 対訳辞書</h1>
+            <p class="mt-2 text-sm md:text-base text-slate-600">Samsad Bengali-English Dictionaryに基づく</p>
+        </header>
+
+        <main>
+            <div class="sticky top-0 bg-slate-50/90 backdrop-blur-sm py-4 z-10">
+                 <div class="max-w-2xl mx-auto">
+                     <div class="relative">
+                         <input type="text" id="searchInput" placeholder="上のタブを選択..." class="w-full px-4 py-3 text-base md:text-lg border-2 border-slate-300 rounded-full shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-200" autocomplete="off" disabled>
+                         <div class="absolute top-0 right-0 h-full flex items-center pr-4 text-slate-400 text-xl"><span>&#128269;</span></div>
+                     </div>
+                 </div>
+                 <div id="results-count" class="text-center text-slate-600 mt-3 text-sm h-5"></div>
+                 <div id="tab-container" class="max-w-4xl mx-auto mt-4"></div>
+                 <div id="sub-tab-container" class="max-w-4xl mx-auto mt-2 text-center"></div>
+            </div>
+            
+            <div id="loading-indicator" class="text-center py-16 hidden"><div class="loader mx-auto"></div><p class="text-slate-500 mt-4" id="loading-text">データを読み込み中...</p></div>
+            <div id="welcome-message" class="text-center text-slate-500 py-16"><p class="text-xl">上のタブからカテゴリを選択してください</p></div>
+            <div id="results-container" class="mt-4 md:mt-6 max-w-4xl mx-auto"></div>
+            <div id="no-results" class="text-center text-slate-500 py-16 hidden"><p class="text-xl">検索結果が見つかりませんでした。</p></div>
+        </main>
+
+        <footer class="text-center text-xs md:text-sm text-slate-500 mt-12 py-6 border-t border-slate-200">
+            <p>Copyright © 2000 by Shishu Sahitya Samsad.</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentDictionary = [];
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('results-container');
+        const noResults = document.getElementById('no-results');
+        const resultsCount = document.getElementById('results-count');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const welcomeMessage = document.getElementById('welcome-message');
+        const tabContainer = document.getElementById('tab-container');
+        const subTabContainer = document.getElementById('sub-tab-container');
+
+        // カテゴリの構造を定義
+        const categories = {
+            vowels: { name: '母音', type: 'flat', items: [ {key: 'অ', char: 'অ'}, {key: 'আ', char: 'আ'}, {key: 'ই', char: 'ই'}, {key: 'ঈ', char: 'ঈ'}, {key: 'উ', char: 'উ'}, {key: 'ঊ', char: 'ঊ'}, {key: 'ঋ', char: 'ঋ'}, {key: 'এ', char: 'এ'}, {key: 'ঐ', char: 'ঐ'}, {key: 'ও', char: 'ও'}, {key: 'ঔ', char: 'ঔ'} ]},
+            consonants: { name: '子音', type: 'flat', items: [ {key: 'ক', char: 'ক'}, {key: 'খ', char: 'ख'}, {key: 'গ', char: 'গ'}, {key: 'ঘ', char: 'ঘ'}, {key: 'ঙ', char: 'ঙ'}, {key: 'চ', char: 'চ'}, {key: 'ছ', char: 'ছ'}, {key: 'জ', char: 'জ'}, {key: 'ঝ', char: 'ঝ'}, {key: 'ঞ', char: 'ঞ'}, {key: 'ট', char: 'ট'}, {key: 'ঠ', char: 'ঠ'}, {key: 'ড', char: 'ড'}, {key: 'ঢ', char: 'ঢ'}, {key: 'ণ', char: 'ণ'}, {key: 'ত', char: 'ত'}, {key: 'থ', char: 'থ'}, {key: 'দ', char: 'দ'}, {key: 'ধ', char: 'ধ'}, {key: 'ন', char: 'ন'}, {key: 'প', char: 'প'}, {key: 'ফ', char: 'ফ'}, {key: 'ব', char: 'ব'}, {key: 'ভ', char: 'ভ'}, {key: 'ম', char: 'ম'}, {key: 'য', char: 'য'}, {key: 'র', char: 'র'}, {key: 'ল', char: 'ল'}, {key: 'শ', char: 'শ'}, {key: 'ষ', char: 'ষ'}, {key: 'স', char: 'স'}, {key: 'হ', char: 'হ'} ]},
+            basic: { name: '基本語', type: 'simple', path: 'json/basic.json', label: '基本語一覧' },
+            tanoshii_gakkou: {
+                name: 'たのしいがっこう',
+                type: 'nested',
+                basePath: 'json/たのしいがっこう',
+                subCategories: [
+                    { key: '☆もくじ', label: '☆もくじ' },
+                    { key: '★しりょう', label: '★しりょう' },
+                    { key: '1_あいさつとへんじ', label: '1. あいさつとへんじ' },
+                    { key: '2_からだのちょうし', label: '2. からだのちょうし' },
+                    { key: '3_たのむとき、たずねるとき', label: '3. たのむとき、たずねるとき' },
+                    { key: '4_がっこうのいきかえり', label: '4. がっこうのいきかえり' },
+                    { key: '5_なかよくあそぼう', label: '5. なかよくあそぼう' },
+                    { key: '6_もちもの', label: '6. もちもの' },
+                    { key: '7_わたしのがっこう', label: '7. わたしのがっこう' },
+                    { key: '8_がっこうのいちにち', label: '8. がっこうのいちにち' },
+                    { key: '9_じかんわり', label: '9. じかんわり' },
+                    { key: '10_がっこうのいちねん', label: '10. がっこうのいちねん' }
+                ]
+            }
+        };
+
+        function highlightText(text, query) {
+            if (typeof text !== 'string' || !query) return text;
+            const safeQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+            const regex = new RegExp(`(${safeQuery})`, 'gi');
+            return text.replace(regex, `<span class="highlight">$1</span>`);
+        }
+        
+        function displayResults(query = '') {
+            const normalizedQuery = query.trim().toLowerCase();
+            const filteredData = normalizedQuery
+                ? currentDictionary.filter(item => 
+                    (item.bengali && item.bengali.toLowerCase().includes(normalizedQuery)) ||
+                    (item.pronunciation && item.pronunciation.toLowerCase().includes(normalizedQuery)) ||
+                    (item.japanese && item.japanese.toLowerCase().includes(normalizedQuery))
+                )
+                : currentDictionary;
+
+            resultsContainer.innerHTML = '';
+            noResults.classList.toggle('hidden', filteredData.length > 0);
+            resultsCount.textContent = filteredData.length > 0 ? `${filteredData.length}件の結果を表示中` : '結果が見つかりません';
+
+            const fragment = document.createDocumentFragment();
+            filteredData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-white p-4 sm:p-6 rounded-lg shadow-sm border border-slate-200 mb-4 break-words';
+                const bengaliWord = item.bengali ? item.bengali.replace(/\d/g, '') : '';
+                const processedJapanese = highlightText(item.japanese || '', query);
+                card.innerHTML = `
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-blue-800">${highlightText(bengaliWord, query)}</h2>
+                        <p class="text-slate-500 italic text-sm sm:text-base">${highlightText(item.pronunciation || '', query)}</p>
+                    </div>
+                    <div class="space-y-3 mt-4 text-sm sm:text-base">
+                        <div class="p-3 bg-blue-50 rounded"><p class="text-slate-900">${processedJapanese}</p></div>
+                    </div>`;
+                fragment.appendChild(card);
+            });
+            resultsContainer.appendChild(fragment);
+        }
+
+        async function loadDictionary(filePath) {
+            welcomeMessage.classList.add('hidden');
+            resultsContainer.innerHTML = '';
+            noResults.classList.add('hidden');
+            loadingIndicator.classList.remove('hidden');
+            resultsCount.textContent = '';
+            searchInput.disabled = true;
+            searchInput.value = '';
+            searchInput.placeholder = `${filePath} を読込中...`;
+
+            try {
+                // ファイル名にスペースが含まれている可能性があるためエンコードする
+                const encodedFilePath = filePath.split('/').map(part => encodeURIComponent(part)).join('/');
+                const response = await fetch(encodedFilePath);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                currentDictionary = await response.json();
+                displayResults();
+            } catch (error) {
+                console.error('Dictionary loading failed:', error);
+                resultsContainer.innerHTML = `<div class="text-center text-red-500 p-8">エラー: ${filePath} の読み込みに失敗しました。サーバー上でファイルが正しい場所に配置されているか確認してください。</div>`;
+                currentDictionary = [];
+                resultsCount.textContent = '読み込みエラー';
+            } finally {
+                loadingIndicator.classList.add('hidden');
+                searchInput.disabled = false;
+                searchInput.placeholder = "読み込んだ単語を検索...";
+                if (currentDictionary.length > 0) searchInput.focus();
+            }
+        }
+
+        function clearState() {
+            subTabContainer.innerHTML = '';
+            resultsContainer.innerHTML = '';
+            resultsCount.textContent = '';
+            currentDictionary = [];
+            searchInput.value = '';
+            searchInput.disabled = true;
+            searchInput.placeholder = '上のタブを選択...';
+            welcomeMessage.classList.remove('hidden');
+        }
+
+        function setupTabs() {
+            let html = '';
+            for (const key in categories) {
+                const category = categories[key];
+                html += `
+                    <div>
+                        <h3 class="collapsible-trigger text-sm font-bold text-slate-500 my-2 px-4 cursor-pointer flex items-center select-none" data-category-key="${key}">
+                            ${category.name}
+                            <span class="collapsible-icon inline-block transform transition-transform duration-200 ml-2">▼</span>
+                        </h3>
+                        <div class="collapsible-content flex flex-wrap justify-start items-center">`;
+                
+                if (category.type === 'flat') {
+                    html += category.items.map(l => `<div class="tab cursor-pointer p-2 px-4 m-1 rounded-full bg-slate-200 hover:bg-slate-300" data-path="json/${l.key}.json">${l.char}</div>`).join('');
+                } else if (category.type === 'simple') {
+                    html += `<div class="tab cursor-pointer p-2 px-4 m-1 rounded-full bg-slate-200 hover:bg-slate-300" data-path="${category.path}">${category.label}</div>`;
+                }
+                html += `</div></div>`;
+            }
+            tabContainer.innerHTML = html;
+
+            tabContainer.addEventListener('click', e => {
+                const trigger = e.target.closest('.collapsible-trigger');
+                if (trigger) {
+                    const categoryKey = trigger.dataset.categoryKey;
+                    const category = categories[categoryKey];
+                    
+                    document.querySelectorAll('.collapsible-trigger').forEach(t => {
+                        if (t !== trigger) {
+                             t.nextElementSibling.style.maxHeight = '0px';
+                             t.querySelector('.collapsible-icon').classList.remove('rotate-180');
+                        }
+                    });
+
+                    const content = trigger.nextElementSibling;
+                    const icon = trigger.querySelector('.collapsible-icon');
+
+                    if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                        content.style.maxHeight = '0px';
+                        icon.classList.remove('rotate-180');
+                        clearState();
+                    } else {
+                        icon.classList.add('rotate-180');
+                        if (category.type === 'nested') {
+                             content.style.maxHeight = '1px'; 
+                             subTabContainer.innerHTML = category.subCategories.map(sub => 
+                                `<div class="sub-tab inline-block cursor-pointer p-2 px-4 m-1 rounded-full bg-slate-200 hover:bg-slate-300" data-path="${category.basePath}/${sub.key}.json">${sub.label}</div>`
+                             ).join('');
+                             resultsContainer.innerHTML = '';
+                             welcomeMessage.innerHTML = '<p class="text-xl">上のサブカテゴリを選択してください</p>';
+                             welcomeMessage.classList.remove('hidden');
+                        } else {
+                            subTabContainer.innerHTML = '';
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    }
+                }
+
+                const tab = e.target.closest('.tab');
+                if (tab && tab.dataset.path) {
+                    document.querySelectorAll('.tab, .sub-tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    subTabContainer.innerHTML = '';
+                    loadDictionary(tab.dataset.path);
+                }
+            });
+
+            subTabContainer.addEventListener('click', e => {
+                const subTab = e.target.closest('.sub-tab');
+                if (subTab && subTab.dataset.path) {
+                    document.querySelectorAll('.tab, .sub-tab').forEach(t => t.classList.remove('active'));
+                    subTab.classList.add('active');
+                    loadDictionary(subTab.dataset.path);
+                }
+            });
+        }
+        
+        searchInput.addEventListener('input', (e) => requestAnimationFrame(() => displayResults(e.target.value)));
+        document.addEventListener('DOMContentLoaded', setupTabs);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+[
+  {
+    "japanese": "あいさつとへんじ",
+    "pronunciation": "しょんばしょん えぼん じょばーる",
+    "bengali": " সম্ভাষণ এবং জবাব"
+  },
+  {
+    "japanese": "おはよう。",
+    "pronunciation": "しゅぼしょかーる",
+    "bengali": "শুভসকাল"
+  },
+  {
+    "japanese": "せんせい、おはようございます。",
+    "pronunciation": "さーる/まだ一むしゅぽしょかーる",
+    "bengali": "স্যার/ম্যাডাম শুভসকাল"
+  },
+  {
+    "japanese": "はい。",
+    "pronunciation": "じー",
+    "bengali": "জি"
+  },
+  {
+    "japanese": "げんきですか。",
+    "pronunciation": "けもなちぇん?",
+    "bengali": "কেমন আছেন?"
+  },
+  {
+    "japanese": "はい、げんきです。",
+    "pronunciation": "じーばろ あち",
+    "bengali": "জি, ভালো আছি"
+  },
+  {
+    "japanese": "こんにちは。",
+    "pronunciation": "しゅぼでぃいん",
+    "bengali": "শুভদিন"
+  },
+  {
+    "japanese": "さようなら。",
+    "pronunciation": "しゅぼびだい",
+    "bengali": "শুভবিদায়"
+  },
+  {
+    "japanese": "わかりましたか。",
+    "pronunciation": "ぶすてべれちぇん?",
+    "bengali": "বুঝতে পেরেছেন?"
+  },
+  {
+    "japanese": "わかりました。",
+    "pronunciation": "じー ぶすてべれち",
+    "bengali": "জি, বুঝতে পেরেছি"
+  },
+  {
+    "japanese": "わかりません。",
+    "pronunciation": "じゃにな",
+    "bengali": "জানিনা"
+  },
+  {
+    "japanese": "あなたの なまえは。",
+    "pronunciation": "あぶなーる なーむ きー?",
+    "bengali": "আপনার নাম কি?"
+  },
+  {
+    "japanese": "ぼくは やまだひろしです。",
+    "pronunciation": "あまーる なーむ ひろし",
+    "bengali": "আমার নাম হিরোশি"
+  },
+  {
+    "japanese": "わたしはさとうあきこ です。",
+    "pronunciation": "あまーる なーむ しゃて あきこ",
+    "bengali": "আমার নাম সাতো আকিকো"
+  },
+  {
+    "japanese": "にがおえ",
+    "pronunciation": "ぷろていくりてい",
+    "bengali": "প্রতিকৃতি"
+  },
+  {
+    "japanese": "先生が訳してください。",
+    "pronunciation": "さーる/まだむ、おぬばどこれでぃん",
+    "bengali": "স্যার/ম্যাডাম, অনুবাদ করে দিন"
+  },
+  {
+    "japanese": "よろしく、おねがいします。",
+    "pronunciation": "びにとほえどんのぽっと じゃぼのこら",
+    "bengali": "বিনীত হয়ে ধন্যবাদ জ্ঞাপন করা"
+  }
+]
