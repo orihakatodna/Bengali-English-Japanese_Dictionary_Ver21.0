@@ -1,0 +1,503 @@
+{
+  "title": "しりょう (資料)",
+  "pronunciation": "のてぃぽっとろ",
+  "bengali": "নথিপত্র",
+  "sections": [
+    {
+      "section_title": "ことばのひょう (言葉の表)",
+      "pronunciation": "しょぼっど たりか",
+      "bengali": "শব্দ তালিকা",
+      "charts": {
+        "gojuon": {
+            "title": "五十音 (Hiragana/Katakana)",
+            "data": [
+                {"hiragana": "あ", "katakana": "ア", "romaji": "a"},
+                {"hiragana": "い", "katakana": "イ", "romaji": "i"},
+                {"hiragana": "う", "katakana": "ウ", "romaji": "u"},
+                {"hiragana": "え", "katakana": "エ", "romaji": "e"},
+                {"hiragana": "お", "katakana": "オ", "romaji": "o"},
+                {"hiragana": "か", "katakana": "カ", "romaji": "ka"},
+                {"hiragana": "き", "katakana": "キ", "romaji": "ki"},
+                {"hiragana": "く", "katakana": "ク", "romaji": "ku"},
+                {"hiragana": "け", "katakana": "ケ", "romaji": "ke"},
+                {"hiragana": "こ", "katakana": "コ", "romaji": "ko"},
+                {"hiragana": "さ", "katakana": "サ", "romaji": "sa"},
+                {"hiragana": "し", "katakana": "シ", "romaji": "shi"},
+                {"hiragana": "す", "katakana": "ス", "romaji": "su"},
+                {"hiragana": "せ", "katakana": "セ", "romaji": "se"},
+                {"hiragana": "そ", "katakana": "ソ", "romaji": "so"},
+                {"hiragana": "た", "katakana": "タ", "romaji": "ta"},
+                {"hiragana": "ち", "katakana": "チ", "romaji": "chi"},
+                {"hiragana": "つ", "katakana": "ツ", "romaji": "tsu"},
+                {"hiragana": "て", "katakana": "テ", "romaji": "te"},
+                {"hiragana": "と", "katakana": "ト", "romaji": "to"},
+                {"hiragana": "な", "katakana": "ナ", "romaji": "na"},
+                {"hiragana": "に", "katakana": "ニ", "romaji": "ni"},
+                {"hiragana": "ぬ", "katakana": "ヌ", "romaji": "nu"},
+                {"hiragana": "ね", "katakana": "ネ", "romaji": "ne"},
+                {"hiragana": "の", "katakana": "ノ", "romaji": "no"},
+                {"hiragana": "は", "katakana": "ハ", "romaji": "ha"},
+                {"hiragana": "ひ", "katakana": "ヒ", "romaji": "hi"},
+                {"hiragana": "ふ", "katakana": "フ", "romaji": "fu"},
+                {"hiragana": "へ", "katakana": "ヘ", "romaji": "he"},
+                {"hiragana": "ほ", "katakana": "ホ", "romaji": "ho"},
+                {"hiragana": "ま", "katakana": "マ", "romaji": "ma"},
+                {"hiragana": "み", "katakana": "ミ", "romaji": "mi"},
+                {"hiragana": "む", "katakana": "ム", "romaji": "mu"},
+                {"hiragana": "め", "katakana": "メ", "romaji": "me"},
+                {"hiragana": "も", "katakana": "モ", "romaji": "mo"},
+                {"hiragana": "や", "katakana": "ヤ", "romaji": "ya"},
+                {"hiragana": "ゆ", "katakana": "ユ", "romaji": "yu"},
+                {"hiragana": "よ", "katakana": "ヨ", "romaji": "yo"},
+                {"hiragana": "ら", "katakana": "ラ", "romaji": "ra"},
+                {"hiragana": "り", "katakana": "リ", "romaji": "ri"},
+                {"hiragana": "る", "katakana": "ル", "romaji": "ru"},
+                {"hiragana": "れ", "katakana": "レ", "romaji": "re"},
+                {"hiragana": "ろ", "katakana": "ロ", "romaji": "ro"},
+                {"hiragana": "わ", "katakana": "ワ", "romaji": "wa"},
+                {"hiragana": "を", "katakana": "ヲ", "romaji": "o"},
+                {"hiragana": "ん", "katakana": "ン", "romaji": "n"}
+            ]
+        },
+        "dakuon_handakuon": {
+            "title": "濁音・半濁音 (Voiced/P-sounds)",
+            "data": [
+                {"hiragana": "が", "katakana": "ガ", "romaji": "ga"},
+                {"hiragana": "ぎ", "katakana": "ギ", "romaji": "gi"},
+                {"hiragana": "ぐ", "katakana": "グ", "romaji": "gu"},
+                {"hiragana": "げ", "katakana": "ゲ", "romaji": "ge"},
+                {"hiragana": "ご", "katakana": "ゴ", "romaji": "go"},
+                {"hiragana": "ざ", "katakana": "ザ", "romaji": "za"},
+                {"hiragana": "じ", "katakana": "ジ", "romaji": "ji"},
+                {"hiragana": "ず", "katakana": "ズ", "romaji": "zu"},
+                {"hiragana": "ぜ", "katakana": "ゼ", "romaji": "ze"},
+                {"hiragana": "ぞ", "katakana": "ゾ", "romaji": "zo"},
+                {"hiragana": "だ", "katakana": "ダ", "romaji": "da"},
+                {"hiragana": "ぢ", "katakana": "ヂ", "romaji": "ji"},
+                {"hiragana": "づ", "katakana": "ヅ", "romaji": "zu"},
+                {"hiragana": "で", "katakana": "デ", "romaji": "de"},
+                {"hiragana": "ど", "katakana": "ド", "romaji": "do"},
+                {"hiragana": "ば", "katakana": "バ", "romaji": "ba"},
+                {"hiragana": "び", "katakana": "ビ", "romaji": "bi"},
+                {"hiragana": "ぶ", "katakana": "ブ", "romaji": "bu"},
+                {"hiragana": "べ", "katakana": "ベ", "romaji": "be"},
+                {"hiragana": "ぼ", "katakana": "ボ", "romaji": "bo"},
+                {"hiragana": "ぱ", "katakana": "パ", "romaji": "pa"},
+                {"hiragana": "ぴ", "katakana": "ピ", "romaji": "pi"},
+                {"hiragana": "ぷ", "katakana": "プ", "romaji": "pu"},
+                {"hiragana": "ぺ", "katakana": "ペ", "romaji": "pe"},
+                {"hiragana": "ぽ", "katakana": "ポ", "romaji": "po"}
+            ]
+        },
+        "yoon": {
+            "title": "拗音 (Contracted sounds)",
+            "data": [
+                {"hiragana": "きゃ", "katakana": "キャ", "romaji": "kya"},
+                {"hiragana": "きゅ", "katakana": "キュ", "romaji": "kyu"},
+                {"hiragana": "きょ", "katakana": "キョ", "romaji": "kyo"},
+                {"hiragana": "ぎゃ", "katakana": "ギャ", "romaji": "gya"},
+                {"hiragana": "ぎゅ", "katakana": "ギュ", "romaji": "gyu"},
+                {"hiragana": "ぎょ", "katakana": "ギョ", "romaji": "gyo"},
+                {"hiragana": "しゃ", "katakana": "シャ", "romaji": "sha"},
+                {"hiragana": "しゅ", "katakana": "シュ", "romaji": "shu"},
+                {"hiragana": "しょ", "katakana": "ショ", "romaji": "sho"},
+                {"hiragana": "じゃ", "katakana": "ジャ", "romaji": "ja"},
+                {"hiragana": "じゅ", "katakana": "ジュ", "romaji": "ju"},
+                {"hiragana": "じょ", "katakana": "ジョ", "romaji": "jo"},
+                {"hiragana": "ちゃ", "katakana": "チャ", "romaji": "cha"},
+                {"hiragana": "ちゅ", "katakana": "チュ", "romaji": "chu"},
+                {"hiragana": "ちょ", "katakana": "チョ", "romaji": "cho"},
+                {"hiragana": "にゃ", "katakana": "ニャ", "romaji": "nya"},
+                {"hiragana": "にゅ", "katakana": "ニュ", "romaji": "nyu"},
+                {"hiragana": "にょ", "katakana": "ニョ", "romaji": "nyo"},
+                {"hiragana": "ひゃ", "katakana": "ヒャ", "romaji": "hya"},
+                {"hiragana": "ひゅ", "katakana": "ヒュ", "romaji": "hyu"},
+                {"hiragana": "ひょ", "katakana": "ヒョ", "romaji": "hyo"},
+                {"hiragana": "びゃ", "katakana": "ビャ", "romaji": "bya"},
+                {"hiragana": "びゅ", "katakana": "ビュ", "romaji": "byu"},
+                {"hiragana": "びょ", "katakana": "ビョ", "romaji": "byo"},
+                {"hiragana": "ぴゃ", "katakana": "ピャ", "romaji": "pya"},
+                {"hiragana": "ぴゅ", "katakana": "ピュ", "romaji": "pyu"},
+                {"hiragana": "ぴょ", "katakana": "ピョ", "romaji": "pyo"},
+                {"hiragana": "みゃ", "katakana": "ミャ", "romaji": "mya"},
+                {"hiragana": "みゅ", "katakana": "ミュ", "romaji": "myu"},
+                {"hiragana": "みょ", "katakana": "ミョ", "romaji": "myo"},
+                {"hiragana": "りゃ", "katakana": "リャ", "romaji": "rya"},
+                {"hiragana": "りゅ", "katakana": "リュ", "romaji": "ryu"},
+                {"hiragana": "りょ", "katakana": "リョ", "romaji": "ryo"}
+            ]
+        }
+      }
+    }
+  ]
+}
+{
+  "title": "しりょう (資料)",
+  "sections": [
+    {
+      "section_title": "すうじ (数字)",
+      "pronunciation": "しょんか",
+      "bengali": "সংখা",
+      "data": [
+        { "japanese": "0 (れい)", "pronunciation": "しゅんの", "bengali": "শুন্য" },
+        { "japanese": "1 (いち)", "pronunciation": "えく", "bengali": "এক" },
+        { "japanese": "2 (に)", "pronunciation": "どうい", "bengali": "দুই" },
+        { "japanese": "3 (さん)", "pronunciation": "てぃん", "bengali": "তিন" },
+        { "japanese": "4 (し / よん)", "pronunciation": "ちゃる", "bengali": "চার" },
+        { "japanese": "5 (ご)", "pronunciation": "ぱーち", "bengali": "পাচ" },
+        { "japanese": "6 (ろく)", "pronunciation": "ちょい", "bengali": "ছয়" },
+        { "japanese": "7 (しち / なな)", "pronunciation": "しゃと", "bengali": "সাত" },
+        { "japanese": "8 (はち)", "pronunciation": "あと", "bengali": "আট" },
+        { "japanese": "9 (く / きゅう)", "pronunciation": "のい", "bengali": "নয়" },
+        { "japanese": "10 (じゅう)", "pronunciation": "どしゅ", "bengali": "দশ" },
+        { "japanese": "11 (じゅういち)", "pronunciation": "えがろ", "bengali": "এগার" },
+        { "japanese": "12 (じゅうに)", "pronunciation": "ばろ", "bengali": "বার" },
+        { "japanese": "13 (じゅうさん)", "pronunciation": "てろ", "bengali": "তের" },
+        { "japanese": "14 (じゅうし)", "pronunciation": "ちょっど", "bengali": "চোদ্দ" },
+        { "japanese": "15 (じゅうご)", "pronunciation": "ぽねろ", "bengali": "পনের" },
+        { "japanese": "16 (じゅうろく)", "pronunciation": "しょろ", "bengali": "ষোল" },
+        { "japanese": "17 (じゅうしち)", "pronunciation": "しょてろ", "bengali": "সতের" },
+        { "japanese": "18 (じゅうはち)", "pronunciation": "あたろ", "bengali": "আঠারো" },
+        { "japanese": "19 (じゅうく)", "pronunciation": "うにっしゅ", "bengali": "উনিশ" },
+        { "japanese": "20 (にじゅう)", "pronunciation": "ぴっしゅ", "bengali": "বিশ" },
+        { "japanese": "21 (にじゅういち)", "pronunciation": "えくしゅ", "bengali": "একুশ" },
+        { "japanese": "22 (にじゅうに)", "pronunciation": "ばいしゅ", "bengali": "বাইশ" },
+        { "japanese": "23 (にじゅうさん)", "pronunciation": "ていしゅ", "bengali": "তেইশ" },
+        { "japanese": "24 (にじゅうし)", "pronunciation": "ちょびっしゅ", "bengali": "চাব্বশ" },
+        { "japanese": "30 (さんじゅう)", "pronunciation": "てぃりっしゅ", "bengali": "ত্রিশ" },
+        { "japanese": "40 (よんじゅう)", "pronunciation": "ちょりっしゅ", "bengali": "চল্লিশ" },
+        { "japanese": "50 (ごじゅう)", "pronunciation": "ぽんちゃっしゅ", "bengali": "পঞ্চাশ" },
+        { "japanese": "60 (ろくじゅう)", "pronunciation": "しゃいっと", "bengali": "ষাট" },
+        { "japanese": "70 (ななじゅう)", "pronunciation": "しょっとーる", "bengali": "সত্তর" },
+        { "japanese": "80 (はちじゅう)", "pronunciation": "あし", "bengali": "আশি" },
+        { "japanese": "90 (きゅうじゅう)", "pronunciation": "のっぽい", "bengali": "নব্বই" },
+        { "japanese": "100 (ひゃく)", "pronunciation": "えくしゅ", "bengali": "একশ" },
+        { "japanese": "101 (ひゃくいち)", "pronunciation": "えくしょえく", "bengali": "একশ এক" },
+        { "japanese": "102 (ひゃくに)", "pronunciation": "えくしょ どうい", "bengali": "একশ দুই" },
+        { "japanese": "110 (ひゃくじゅう)", "pronunciation": "えくしょ どっしゅ", "bengali": "একশ দশ" },
+        { "japanese": "115 (ひゃくじゅうご)", "pronunciation": "えくしょぼねろ", "bengali": "একশ পনের" },
+        { "japanese": "176 (ひゃくななじゅうろく)", "pronunciation": "えくしょ ちあっとろ", "bengali": "একশ ছিয়াত্তর" },
+        { "japanese": "200 (にひゃく)", "pronunciation": "どういしょ", "bengali": "দইশ" },
+        { "japanese": "201 (にひゃくいち)", "pronunciation": "どういしょえく", "bengali": "দুহশ এক" },
+        { "japanese": "246 (にひゃくよんじゅうろく)", "pronunciation": "どういしょ ちっちょりっしゅ", "bengali": "দুইশ ছিচল্লিশ" },
+        { "japanese": "300 (さんびゃく)", "pronunciation": "てぃんしょ", "bengali": "তিনশ" },
+        { "japanese": "400 (よんひゃく)", "pronunciation": "ちゃーるしょ", "bengali": "চারশ" },
+        { "japanese": "500 (ごひゃく)", "pronunciation": "ばーちしょ", "bengali": "পাঁচশ" },
+        { "japanese": "600 (ろっぴゃく)", "pronunciation": "ちょいしょ", "bengali": "ছয়শ" },
+        { "japanese": "700 (ななひゃく)", "pronunciation": "しゃとしょ", "bengali": "সাতশ" },
+        { "japanese": "800 (はっぴゃく)", "pronunciation": "あとしょ", "bengali": "আটশ" },
+        { "japanese": "900 (きゅうひゃく)", "pronunciation": "のいしょ", "bengali": "নয়শ" },
+        { "japanese": "1,000 (せん)", "pronunciation": "えくはじゃーる", "bengali": "এক হাজার" },
+        { "japanese": "1,001 (せんいち)", "pronunciation": "えくはじゃーるえく", "bengali": "এক হাজার এক" },
+        { "japanese": "1,993 (せんきゅうひゃくきゅうじゅうさん)", "pronunciation": "えく はじゃーるのいしょていらのっぽい", "bengali": "এক হাজার নয়শ তিরানব্বই" },
+        { "japanese": "10,000 (いちまん)", "pronunciation": "どっしゅはじゃーる", "bengali": "দশ হাজার" },
+        { "japanese": "100,000 (じゅうまん)", "pronunciation": "えくらっく(ろっこ)", "bengali": "এক লাখ" },
+        { "japanese": "1,000,000 (ひゃくまん)", "pronunciation": "どっしゅらっく(ろっこ)", "bengali": "দশ লাখ" },
+        { "japanese": "10,000,000 (せんまん)", "pronunciation": "えくしょ らっく", "bengali": "একশ লাখ" }
+      ]
+    },
+    {
+      "section_title": "かずのくらい (数の位)",
+      "pronunciation": "しょんか このなーるえこく",
+      "bengali": "সংখা গণনার একক",
+      "data": [
+        { "japanese": "いち", "pronunciation": "えく", "bengali": "এক" },
+        { "japanese": "じゅう", "pronunciation": "どっしゅ", "bengali": "দশ" },
+        { "japanese": "ひゃく", "pronunciation": "えくしょ", "bengali": "একশ" },
+        { "japanese": "せん", "pronunciation": "えく はじゃーる", "bengali": "এক হাজার" },
+        { "japanese": "いちまん", "pronunciation": "どっしゅ はじゃーる", "bengali": "দশ হাজার" },
+        { "japanese": "じゅうまん", "pronunciation": "えくらっく", "bengali": "এক লাখ," },
+        { "japanese": "ひゃくまん", "pronunciation": "どっしゅ らっく", "bengali": "দশ লাখ" },
+        { "japanese": "せんまん", "pronunciation": "えくしょ らっく", "bengali": "একশ লাখ" }
+      ]
+    }
+  ]
+}
+{
+  "title": "しりょう (資料)",
+  "sections": [
+    {
+      "section_title": "がくしゅうでつかうことば (学習で使う言葉)",
+      "pronunciation": "ぼらしょなえ ばっぽりと しょぶどまら",
+      "bengali": " পড়াশোনায় ব্যবহৃত শব্দমালা",
+      "categories": [
+        {
+          "category_name": "こくご (国語)",
+          "pronunciation": "まとりぱしゃ",
+          "bengali": "মাতৃভাষা",
+          "data": [
+            { "japanese": "ひらがな", "pronunciation": "ひらがな", "bengali": "হিরাগানা" },
+            { "japanese": "かたかな", "pronunciation": "かたかな", "bengali": "কাতাকানা" },
+            { "japanese": "かんじ", "pronunciation": "かんじ", "bengali": "কানজি" },
+            { "japanese": "どくしょ", "pronunciation": "ぱいぼら", "bengali": "বইপড়া" },
+            { "japanese": "ものがたり", "pronunciation": "ごるぽ", "bengali": "গল্প" },
+            { "japanese": "さくぶん", "pronunciation": "ろちょな", "bengali": "রচনা" },
+            { "japanese": "ぶん", "pronunciation": "ばっこ", "bengali": "বাক্য" },
+            { "japanese": "ごく", "pronunciation": "ぶろちょりと しょぶどまら", "bengali": "প্রচলিত শব্দমালা" },
+            { "japanese": "ろうどく", "pronunciation": "あぶりてぃこら", "bengali": "আবৃতি করা" },
+            { "japanese": "おんどく", "pronunciation": "しょぶどこれまら", "bengali": "শব্দ করে পড়া" },
+            { "japanese": "もくどく", "pronunciation": "にるべ ぼら", "bengali": " নীরবে পড়া" },
+            { "japanese": "ふで", "pronunciation": "べん", "bengali": "পেন" },
+            { "japanese": "すみ", "pronunciation": "かり", "bengali": "কালি" },
+            { "japanese": "じしょ・じてん", "pronunciation": "おびだん", "bengali": "অভিধান" },
+            { "japanese": "ようす", "pronunciation": "おぼすた", "bengali": "অবস্থা" },
+            { "japanese": "そうぞうする", "pronunciation": "こるぽなこら", "bengali": "কল্পনা করা" },
+            { "japanese": "ばめん", "pronunciation": "でぃろっしゅぼと", "bengali": "দৃশ্যপট" },
+            { "japanese": "だんらく", "pronunciation": "おぬっちぇど", "bengali": "অনুচ্ছেদ" }
+          ]
+        },
+        {
+          "category_name": "しゃかい (社会)",
+          "pronunciation": "しょまず",
+          "bengali": "সমাজ",
+          "data": [
+            { "japanese": "ちず", "pronunciation": "まんちとろ", "bengali": "মানচিত্র" },
+            { "japanese": "くに", "pronunciation": "でしゅ", "bengali": "দেশ" },
+            { "japanese": "けん", "pronunciation": "じぇら", "bengali": "জেলা" },
+            { "japanese": "し", "pronunciation": "してい", "bengali": "সিটি" },
+            { "japanese": "まち", "pronunciation": "しょほる", "bengali": "শহর" },
+            { "japanese": "むら", "pronunciation": "ぐらむ", "bengali": "গ্রাম" },
+            { "japanese": "やま", "pronunciation": "ばはーる", "bengali": "পাহাড়" },
+            { "japanese": "かわ", "pronunciation": "のでい", "bengali": "নদী" },
+            { "japanese": "はたけ", "pronunciation": "けーと", "bengali": "ক্ষেত" },
+            { "japanese": "た", "pronunciation": "だんけーと", "bengali": "ধানক্ষেত" },
+            { "japanese": "しやくしょ", "pronunciation": "してい おふぃす", "bengali": "সিটি অফিস" },
+            { "japanese": "くやくしょ", "pronunciation": "わーるど おふぃす", "bengali": "ওয়ার্ড অফিস" },
+            { "japanese": "こうぎょう", "pronunciation": "しるぽ", "bengali": "শিল্প" },
+            { "japanese": "のうぎょう", "pronunciation": "くりしかーじ", "bengali": "কৃষিকাজ" },
+            { "japanese": "しょうぎょう", "pronunciation": "しばにっじょ", "bengali": "বাণিজ্য" },
+            { "japanese": "ちり", "pronunciation": "ぶこる", "bengali": "ভূগোল" },
+            { "japanese": "れきし", "pronunciation": "いていはーし", "bengali": "ইতিহাস" }
+          ]
+        },
+        {
+          "category_name": "さんすう・すうがく (算数・数学)",
+          "pronunciation": "このな・おんこ",
+          "bengali": "গণনা, অংক",
+          "data": [
+            { "japanese": "けいさん", "pronunciation": "ひしゃぶ こら", "bengali": "হিসাব করা" },
+            { "japanese": "たす", "pronunciation": "じょぐ", "bengali": "যোগ" },
+            { "japanese": "ひく", "pronunciation": "ぴょぐ", "bengali": "বিয়োগ" },
+            { "japanese": "かける", "pronunciation": "ぐん", "bengali": "গুণন" },
+            { "japanese": "わる", "pronunciation": "ばぐ", "bengali": "ভাগ" },
+            { "japanese": "せいすう", "pronunciation": "ぶるのしょんか", "bengali": "পূর্ণ সংখা" },
+            { "japanese": "しょうすう", "pronunciation": "どしょみくしょんか", "bengali": "দশামক সংখা" },
+            { "japanese": "ぶんすう", "pronunciation": "ぼぐなんしょ", "bengali": "ভগ্নাংশ" },
+            { "japanese": "ながさ", "pronunciation": "でいるこ", "bengali": "দেঘ্য" },
+            { "japanese": "めんせき", "pronunciation": "けっとろ", "bengali": "ক্ষেত্র" },
+            { "japanese": "たいせき", "pronunciation": "あよとん", "bengali": "আয়তন" },
+            { "japanese": "おもさ", "pronunciation": "おじょん", "bengali": "ওজন" },
+            { "japanese": "はやさ", "pronunciation": "ごてい", "bengali": "গতি" },
+            { "japanese": "さんかくけい", "pronunciation": "てぃりぶず", "bengali": "ত্রিভুজ" },
+            { "japanese": "しかくけい", "pronunciation": "ちょとうるぶず", "bengali": "চতুর্ভূজ" },
+            { "japanese": "せいほうけい", "pronunciation": "ぼるごけとろ", "bengali": "বর্গক্ষেত্র" },
+            { "japanese": "ちょうほうけい", "pronunciation": "あいとけとろ", "bengali": "আয়তক্ষেত্র" },
+            { "japanese": "へいこうしへんけい", "pronunciation": "しょまんとらるけとろ", "bengali": "সমান্তরাল ক্ষেত্র" },
+            { "japanese": "えん", "pronunciation": "ぼりっと", "bengali": "বৃত্ত" },
+            { "japanese": "ずけい", "pronunciation": "ちとろ", "bengali": "চিত্র" },
+            { "japanese": "しき", "pronunciation": "しょみころん", "bengali": "সমীকরণ" },
+            { "japanese": "こたえ", "pronunciation": "うっとる", "bengali": "উত্তর" },
+            { "japanese": "しょうめい", "pronunciation": "ぷろまん", "bengali": "প্রমাণ" }
+          ]
+        },
+        {
+          "category_name": "りか (理科)",
+          "pronunciation": "ぴっがん",
+          "bengali": "বিজ্ঞান",
+          "data": [
+            { "japanese": "じっけん", "pronunciation": "ばりっかこら", "bengali": "পরীক্ষা করা" },
+            { "japanese": "かんさつ", "pronunciation": "ぱるぞべっこん", "bengali": "পর্যবেক্ষণ" },
+            { "japanese": "はな", "pronunciation": "ふーる", "bengali": "ফুল" },
+            { "japanese": "くうき", "pronunciation": "ばたーしゅ", "bengali": "বাতাস" },
+            { "japanese": "みず", "pronunciation": "ぱに", "bengali": "পানি" },
+            { "japanese": "たいよう", "pronunciation": "しゅるじょ", "bengali": "সূর্য" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{
+  "title": "しりょう (資料)",
+  "sections": [
+    {
+      "section_title": "がくしゅうでつかうことば (学習で使う言葉)",
+      "categories": [
+        {
+          "category_name": "りか (理科)",
+          "data": [
+            { "japanese": "こんちゅう", "pronunciation": "きとぼとんぐ", "bengali": " কীট পতঙ্গ" },
+            { "japanese": "どうぶつ", "pronunciation": "ぼしゅぱき", "bengali": "পশুপাখি" },
+            { "japanese": "しょくぶつ", "pronunciation": "が一つぱら", "bengali": "গাছপালা" },
+            { "japanese": "ひかり", "pronunciation": "あろ一", "bengali": "আলো" },
+            { "japanese": "ほし", "pronunciation": "たら", "bengali": "তারা" },
+            { "japanese": "うちゅう", "pronunciation": "もはびっしょ", "bengali": "মহাবিশ্ব" },
+            { "japanese": "おんど", "pronunciation": "たぶまとら", "bengali": "তাপমাত্রা" },
+            { "japanese": "かんでんち", "pronunciation": "ぽってり", "bengali": "ব্যাটারী" }
+          ]
+        },
+        {
+          "category_name": "たいいく・ほけんたいいく (体育・保健体育)",
+          "pronunciation": "しょりるちょるちゃ、しょりりく しっか",
+          "bengali": "শরীরচর্চা, শারীরিক শিক্ষা",
+          "data": [
+            { "japanese": "たいそう", "pronunciation": "じむなしょていくす", "bengali": "জিমন্যাসটিকস" },
+            { "japanese": "マット", "pronunciation": "まっと", "bengali": "ম্যাট" },
+            { "japanese": "てつほう", "pronunciation": "ぼる", "bengali": "পোল" },
+            { "japanese": "とびばこ", "pronunciation": "おしょらふ", "bengali": "অশ্বলাফ" },
+            { "japanese": "はしりたかとび", "pronunciation": "はいじゃんぶ", "bengali": "হাইজাম্প" },
+            { "japanese": "はしりはばとび", "pronunciation": "ろんぐじゃんぷ", "bengali": "লংজাম্প" },
+            { "japanese": "リレー", "pronunciation": "りれーれーす", "bengali": "রিলেরেস" },
+            { "japanese": "フォークダンス", "pronunciation": "ろーくにりっと", "bengali": "লোকনৃত্য" }
+          ]
+        },
+        {
+          "category_name": "おんがく (音楽)",
+          "pronunciation": "こんばずな",
+          "bengali": "গানবাজনা",
+          "data": [
+            { "japanese": "うた", "pronunciation": "がん", "bengali": "গান" },
+            { "japanese": "がっしょう", "pronunciation": "こらしゅ", "bengali": "কোরাস" },
+            { "japanese": "おおだいこ", "pronunciation": "どーる", "bengali": "ঢোল" },
+            { "japanese": "こだいこ", "pronunciation": "ちょとどーる", "bengali": "ছোট ঢোল" },
+            { "japanese": "ピアノ", "pronunciation": "ぴやの", "bengali": "পিয়ানো" },
+            { "japanese": "リコーダー", "pronunciation": "れこーだー", "bengali": "রেকর্ডার" },
+            { "japanese": "がくふ", "pronunciation": "がねるのと", "bengali": "গানের নোট" }
+          ]
+        },
+        {
+          "category_name": "テスト (Test)",
+          "pronunciation": "ぼりっか",
+          "bengali": "পরীক্ষা",
+          "data": [
+            { "japanese": "はじめ", "pronunciation": "しゅーるころ", "bengali": "শুরু কর" },
+            { "japanese": "やめ", "pronunciation": "れか しぇしころ", "bengali": "লেখা শেষ কর" },
+            { "japanese": "もんだいようし", "pronunciation": "ぶろしょんまら", "bengali": "প্রশ্নমালা" },
+            { "japanese": "かいとうようし", "pronunciation": "うっとるまら", "bengali": "উত্তরমালা" }
+          ]
+        },
+        {
+          "category_name": "かてい・ぎじゅつかてい (家庭・技術家庭)",
+          "pronunciation": "がろすと、ぴっがんしゃか",
+          "bengali": "গার্হস্থ্য, বিজ্ঞানশাখা",
+          "data": [
+            { "japanese": "はり", "pronunciation": "しゅちょ", "bengali": "সুঁচ" },
+            { "japanese": "いと", "pronunciation": "しゅた", "bengali": "সুতো" },
+            { "japanese": "ぬう", "pronunciation": "しぇらいこら", "bengali": "সেলাই করা" },
+            { "japanese": "りょうり", "pronunciation": "らんなばんな", "bengali": "রান্নাবান্না" },
+            { "japanese": "ほうちょう", "pronunciation": "ちゅり", "bengali": "ছরি" },
+            { "japanese": "でんき", "pronunciation": "びどうっと", "bengali": "বিদ্যুৎ" },
+            { "japanese": "あんぜん", "pronunciation": "にらばど", "bengali": "নিরাপদ" },
+            { "japanese": "かぞく", "pronunciation": "ぼりばーる", "bengali": "পরিবার" },
+            { "japanese": "すまい", "pronunciation": "ばり", "bengali": "বাড়ি" }
+          ]
+        },
+        {
+          "category_name": "ずがこうさく・びじゅつ (図画工作・美術)",
+          "pronunciation": "ちょびあか、しるぼこら",
+          "bengali": "ছবি আঁকা, শিল্পকলা",
+          "data": [
+            { "japanese": "しゃせい", "pronunciation": "すけーちょ", "bengali": "স্কেচ" },
+            { "japanese": "ねんど", "pronunciation": "かだまてい", "bengali": "কাদামাটি" },
+            { "japanese": "いろ", "pronunciation": "ろん", "bengali": "রং" },
+            { "japanese": "ざいりょう", "pronunciation": "うばだん", "bengali": "উপাদান" },
+            { "japanese": "はんが", "pronunciation": "ちゃぱ", "bengali": "ছাপা" },
+            { "japanese": "つくる", "pronunciation": "といりー こら", "bengali": "তৈরী করা" },
+            { "japanese": "(えを)かく", "pronunciation": "ちょび あか", "bengali": "ছবি আঁকা" }
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "せいかつでつかうことば (生活で使う言葉)",
+      "pronunciation": "じぼんじゃぽねぼっぱりと しょぶど",
+      "bengali": "জীবনযাপনে ব্যবহৃত শব্দ",
+      "categories": [
+        {
+          "category_name": "かぞく (家族)",
+          "pronunciation": "ぼりばーる",
+          "bengali": "পরিবার",
+          "data": [
+            { "japanese": "おとうさん", "pronunciation": "ばば", "bengali": "বাবা" },
+            { "japanese": "おかあさん", "pronunciation": "まー", "bengali": "মা" },
+            { "japanese": "おにいさん", "pronunciation": "ぼろぱい", "bengali": "বড় ভাই" },
+            { "japanese": "おねえさん", "pronunciation": "ぼろぽん", "bengali": "বড় বোন" },
+            { "japanese": "おとうと", "pronunciation": "ちょとばい", "bengali": "ছোট ভাই" },
+            { "japanese": "いもうと", "pronunciation": "ちょとぼん", "bengali": "ছোট বোন" },
+            { "japanese": "おじいさん", "pronunciation": "ちゃちゃ、まま", "bengali": "চাচা, মামা" },
+            { "japanese": "おばあさん", "pronunciation": "ちゃち、まみ", "bengali": "চাচী, মামী" }
+          ]
+        },
+        {
+          "category_name": "ようすをあらわすことば (様子をあらわす言葉)",
+          "pronunciation": "おぼすた ぼるのな こらる しょもえ べぼはりと しゅぽっど",
+          "bengali": "অবস্থা বর্ণনা করার সময়ে ব্যবহৃত শব্দ",
+          "data": [
+            { "japanese": "おおきい", "pronunciation": "ぼろ", "bengali": "বড়" },
+            { "japanese": "ちいさい", "pronunciation": "ちょっと", "bengali": "ছোট" },
+            { "japanese": "ながい", "pronunciation": "ろんぱ", "bengali": "লম্বা" },
+            { "japanese": "みじかい", "pronunciation": "かと", "bengali": "খাটো" },
+            { "japanese": "つよい", "pronunciation": "しょくていしゃり", "bengali": "শক্তিশালী" },
+            { "japanese": "よわい", "pronunciation": "どぅるぽーる", "bengali": "দূর্বল" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{
+  "title": "しりょう (資料)",
+  "sections": [
+    {
+      "section_title": "せいかつでつかうことば (生活で使う言葉)",
+      "categories": [
+        {
+          "category_name": "ようすをあらわすことば (様子をあらわす言葉)",
+          "pronunciation": "おぼすた ぼるのな こらる しょもえ べぼはりと しゅぽっど",
+          "bengali": "অবস্থা বর্ণনা করার সময়ে ব্যবহৃত শব্দ",
+          "data": [
+            { "japanese": "おおい", "pronunciation": "べし", "bengali": "বেশি" },
+            { "japanese": "すくない", "pronunciation": "こむ", "bengali": "কম" },
+            { "japanese": "ふかい", "pronunciation": "こぴーる", "bengali": "গভীর" },
+            { "japanese": "あさい", "pronunciation": "おごびーる", "bengali": "অগভীর" },
+            { "japanese": "はやい", "pronunciation": "どぅると", "bengali": "দ্রুত" },
+            { "japanese": "おそい", "pronunciation": "でいる", "bengali": "ধীর" },
+            { "japanese": "たかい", "pronunciation": "うちゅ", "bengali": "উচ্চ" },
+            { "japanese": "ひくい", "pronunciation": "にちゅ", "bengali": "নিচ" },
+            { "japanese": "あつい", "pronunciation": "ごろむ", "bengali": "গরম" },
+            { "japanese": "さむい", "pronunciation": "たんだ", "bengali": " ঠান্ডা" },
+            { "japanese": "おもい", "pronunciation": "ぱりい", "bengali": "ভারী" },
+            { "japanese": "かるい", "pronunciation": "はるか", "bengali": "হালকা" },
+            { "japanese": "うつくしい", "pronunciation": "しゅんどーる", "bengali": "সুন্দর" },
+            { "japanese": "かわいい", "pronunciation": "あこるしょにお", "bengali": "আকর্ষণীয়" }
+          ]
+        },
+        {
+          "category_name": "どうさをあらわすことば (動作をあらわす言葉)",
+          "pronunciation": "にるむかんどぼるなえ べぼはりと しゅぽっど",
+          "bengali": "কর্মকান্ড বর্ণনায় ব্যবহৃত শব্দ",
+          "data": [
+            { "japanese": "あるく", "pronunciation": "はた", "bengali": "হাটা" },
+            { "japanese": "はしる", "pronunciation": "どうらの", "bengali": "দৌড়ানো" },
+            { "japanese": "たつ", "pronunciation": "だらの", "bengali": "দাড়ানো" },
+            { "japanese": "すわる", "pronunciation": "ほしゃ", "bengali": "বসা" },
+            { "japanese": "しらべる", "pronunciation": "こたぼら", "bengali": "কথা বলা" },
+            { "japanese": "まとめる", "pronunciation": "えこっとりとこら", "bengali": "একত্রিত করা" },
+            { "japanese": "ひろう", "pronunciation": "とら", "bengali": "তোলা" },
+            { "japanese": "すてる", "pronunciation": "ふぇれでや", "bengali": "ফেলে দেয়া" },
+            { "japanese": "あらう", "pronunciation": "どや", "bengali": "ধোয়া" },
+            { "japanese": "かす", "pronunciation": "だるでや", "bengali": "ধার দেয়া" },
+            { "japanese": "かりる", "pronunciation": "だるねや", "bengali": "ধার নেয়া" },
+            { "japanese": "いく", "pronunciation": "じゃわ", "bengali": "যাওয়া" },
+            { "japanese": "かえる", "pronunciation": "ふぃいれ あしゃ", "bengali": "ফিরে আসা" },
+            { "japanese": "もつ", "pronunciation": "どら", "bengali": "ধরা" },
+            { "japanese": "かう", "pronunciation": "けな", "bengali": "কেনা" },
+            { "japanese": "うる", "pronunciation": "ぴっくりこら", "bengali": "বিক্রি করা" },
+            { "japanese": "つかむ", "pronunciation": "あくれどら", "bengali": "আঁকড়ে ধরা" },
+            { "japanese": "にぎる", "pronunciation": "どら", "bengali": "ধরা" }
+          ]
+        }
+      ]
+    }
+  ]
+}
